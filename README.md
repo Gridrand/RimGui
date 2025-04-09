@@ -1,3 +1,5 @@
+# Learn more
+[Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
 
 # Introduction  
 RimGui is a high-performance, lightweight GUI library that supports Built-in Render Pipeline, URP, and HDRP.
@@ -63,3 +65,6 @@ If you need a simple GUI, RimGui can be used as an alternative to UI Toolkit or 
 - Window  
 - Drag and Drop  
 ...and many more.
+
+# Support
+If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
