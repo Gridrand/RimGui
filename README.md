@@ -1,27 +1,43 @@
-# Learn more
-[Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
-
 # Introduction  
-RimGui is a high-performance, lightweight GUI library that supports Built-in Render Pipeline, URP, and HDRP.
+**RimGui** is an easy-to-use code-driven GUI library designed for rapid iteration. 
+Build user interfaces quickly and efficiently with minimal code. It's perfect not only for debugging tools but also for integrating smooth and responsive UI into actual gameplay.
 
-It enables easy creation of user interfaces, and can be integrated not only into debugging tools but also into actual gameplay.
+Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
-To draw a button, all you need is the following code:
-```csharp
-if (Gui.Button())
-{
-    // Action when pressed
-}
-```
+**Render Pipeline Support**  
+- Supports Built-in Render Pipeline, URP, and HDRP.
 
-Unlike libraries such as uGUI or UI Toolkit, RimGui is an **Immediate Mode GUI** library.
+**Customizable**  
+- Easily tweak various parameters to fit your needs.  
+- You can also create custom widgets from scratch.
+
+**Cross-platform Support**  
+- Works not only on PC but also on WebGL and mobile platforms.
+
+**Font Support**  
+- Supports custom fonts and texture atlas generation.
+
+**High-Performance Immediate Mode GUI**
+- Designed with performance in mind so it can be used even as an in-game GUI.
+
 
 To learn more about Immediate Mode GUI, refer to:  
 [Unity - Manual: Immediate Mode GUI (IMGUI)](https://docs.unity3d.com/2021.3/Documentation/Manual/GUIScriptingGuide.html)  
 While Unity IMGUI is mainly intended for *in-game debugging and tools*, RimGui is suitable for actual in-game use as well.
 
 However, it’s not designed for GUIs with flashy visual effects — it’s best suited for games that require a clean and simple interface.  
-If you need a simple GUI, RimGui can be used as an alternative to UI Toolkit or uGUI.
+If you are seeking a simple GUI, RimGui could be a useful alternative to UI Toolkit or uGUI.
+
+
+```csharp
+Gui.Heading("Sample");
+Gui.LabelSlider("Slider", ref value, 0, 100);
+if (Gui.Button("Increment"))
+    value++;
+```
+The following UI is displayed by the code above.
+![sample-ui](sample-ui.png)
+
 
 ---
 
@@ -47,10 +63,14 @@ If you need a simple GUI, RimGui can be used as an alternative to UI Toolkit or 
 - RadioButton  
 - CheckBox  
 - Color  
+- ColorPicker
+- Custom
 - Dropdown  
 - Foldout  
+- Frame
 - InputText  
 - Label  
+  - LabelText, LabelInput, LabelNumeric, and more
 - ListView  
 - Scroll  
 - Separator  
@@ -66,5 +86,12 @@ If you need a simple GUI, RimGui can be used as an alternative to UI Toolkit or 
 - Drag and Drop  
 ...and many more.
 
+# Links
+[AssetStore Page](https://assetstore.unity.com/packages/slug/316805)
+[Demo](https://gridrand.com/rimgui/WebGL)
+[Github](https://github.com/Gridrand/RimGui)
+[Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
+
 # Support
 If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
+For direct support, you can reach us at **support [at] gridrand [dot] com**.
