@@ -36,6 +36,7 @@ if (Gui.Button("Increment"))
     value++;
 ```
 The following UI is displayed by the code above.
+
 ![sample-ui](sample-ui.png)
 
 
@@ -91,7 +92,9 @@ The following UI is displayed by the code above.
 [Demo](https://gridrand.com/rimgui/WebGL)
 [Github](https://github.com/Gridrand/RimGui)
 [Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
+[Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582)
 
 # Support
 If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
 For direct support, you can reach us at **support [at] gridrand [dot] com**.
+You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
