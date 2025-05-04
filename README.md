@@ -87,6 +87,14 @@ The following UI is displayed by the code above.
 - Drag and Drop  
 ...and many more.
 
+# Differences Between Unity IMGUI and RimGui
+
+- **Targets both developers and end-users:** While Unity IMGUI is primarily for developer tools, RimGui targets not only developers but also **user interfaces for players enjoying the game.**
+- **High-Performance Design:** RimGui is designed for high performance, including efforts to **minimize GC (Garbage Collection) allocation.**
+- **Modern Rendering Pipeline Compatibility:** RimGui is compatible with the **URP (Universal Render Pipeline) and HDRP (High Definition Render Pipeline)**, enables seamless integration with the latest Unity projects.
+- **Wide Platform Support:** RimGui supports a diverse range of platforms, including **PC, Mobile, and WebGL**, allowing you to **target your desired environments without limitations.**
+- **Flexible Scalability:** With RimGui, you can easily change the size and scale of UI elements, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
+
 # Links
 [AssetStore Page](https://assetstore.unity.com/packages/slug/316805)
 [Demo](https://gridrand.com/rimgui/WebGL)
