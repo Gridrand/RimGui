@@ -17,17 +17,20 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 **Font Support**  
 - Supports custom fonts and texture atlas generation.
 
-**High-Performance Immediate Mode GUI**
-- Designed with performance in mind so it can be used even as an in-game GUI.
+**High-Performance Immediate Mode GUI (ImGui)**
+- Designed for high performance, with efforts to minimize GC (Garbage Collection) allocation.
+
+**Targets both developers and end-users:**
+- RimGui targets not only developers but also **user interfaces for players enjoying the game.**
+
+**Flexible Scalability:**
+- You can easily change the size and scale of UI widgets, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
 
 
-To learn more about Immediate Mode GUI, refer to:  
-[Unity - Manual: Immediate Mode GUI (IMGUI)](https://docs.unity3d.com/2021.3/Documentation/Manual/GUIScriptingGuide.html)  
-While Unity IMGUI is mainly intended for *in-game debugging and tools*, RimGui is suitable for actual in-game use as well.
-
-However, it’s not designed for GUIs with flashy visual effects — it’s best suited for games that require a clean and simple interface.  
+It's not designed for GUIs that require flashy effects, but it's perfect if you need a simple and clean interface.
 If you are seeking a simple GUI, RimGui could be a useful alternative to UI Toolkit or uGUI.
 
+# Example Code
 
 ```csharp
 Gui.Heading("Sample");
