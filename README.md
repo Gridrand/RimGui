@@ -71,10 +71,9 @@ The following UI is displayed by the code above.
 - Custom
 - Dropdown  
 - Foldout  
-- Frame
-- InputText  
-- Label  
-  - LabelText, LabelInput, LabelNumeric, and more
+- Frame  
+- Input
+  - LabelInput, LabelInputNumeric, Vector2, Vector3, Vector4, Vector2Int, Vector3Int, Rect, RectInt, Bounds, BoundsInt etc
 - ListView  
 - Scroll  
 - Separator  
