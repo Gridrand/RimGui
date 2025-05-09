@@ -34,7 +34,7 @@ If you are seeking a simple GUI, RimGui could be a useful alternative to UI Tool
 
 ```csharp
 Gui.Heading("Sample");
-Gui.LabelSlider("Slider", ref value, 0, 100);
+Gui.LabelSliderNumeric("Slider", ref value, 0, 100);
 if (Gui.Button("Increment"))
     value++;
 ```
@@ -103,9 +103,9 @@ The following UI is displayed by the code above.
 [Demo](https://gridrand.com/rimgui/WebGL)
 [Github](https://github.com/Gridrand/RimGui)
 [Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
-[Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582)
+[Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui-library/1637582)
 
 # Support
 If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
 For direct support, you can reach us at **support [at] gridrand [dot] com**.
-You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
+You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui-library/1637582) thread.
