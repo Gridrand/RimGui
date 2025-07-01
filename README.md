@@ -1,4 +1,9 @@
-# Introduction  
+# Introduction
+RimGui & RimGui Extensions
+
+# RimGui
+
+## Introduction  
 **RimGui** is an easy-to-use code-driven GUI library designed for rapid iteration. 
 Build user interfaces quickly and efficiently with minimal code. It's perfect not only for debugging tools but also for integrating smooth and responsive UI into actual gameplay.
 
@@ -10,6 +15,7 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 **Customizable**  
 - Easily tweak various parameters to fit your needs.  
 - You can also create custom widgets from scratch.
+- You can even render freely from the triangle mesh level for complete control.
 
 **Cross-platform Support**  
 - Works not only on PC but also on WebGL and mobile platforms.
@@ -28,24 +34,34 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
 
 It's not designed for GUIs that require flashy effects, but it's perfect if you need a simple and clean interface.
-If you are seeking a simple GUI, RimGui could be a useful alternative to UI Toolkit or uGUI.
 
-# Example Code
+## Example Code
 
 ```csharp
-Gui.Heading("Sample");
-Gui.LabelSliderNumeric("Slider", ref value, 0, 100);
-if (Gui.Button("Increment"))
-    value++;
+Gui.Heading("ChangeAlpha");
+
+using (ImageColors.Begin(new Color(1f, 1f, 1f, alpha)))
+    Gui.Image(Sprite);
+
+Gui.Slider(ref alpha, 0f, 1f);
+Gui.Text(alpha.ToString("F2"));
+
+if (Gui.NextHeight(100f).BeginScroll())
+{
+    for (int i = 0; i < 11; i++)
+    {
+        if (Gui.Button($"Set {i / 10f}"))
+            alpha = i / 10f;
+    }
+    Gui.EndScroll();
+}
 ```
 The following UI is displayed by the code above.
-
-![sample-ui](sample-ui.png)
-
+![code-gui-comparison](code-gui-comparison.png)
 
 ---
 
-# Goals
+## Goals
 - Easy-to-use GUI library
 - Rapid UI creation
 - Simplicity
@@ -55,41 +71,37 @@ The following UI is displayed by the code above.
 
 ---
 
-# Non-goals
+## Non-goals
 - Support for GUIs with heavy visual effects  
 
 ---
 
-# Features  
+## Features  
 - Box  
 - Button  
 - ToggleButton  
 - RadioButton  
 - CheckBox  
-- Color  
-- ColorPicker
+- ColorPreview
 - Custom
-- Dropdown  
 - Foldout  
-- Frame  
-- Input
-  - LabelInput, LabelInputNumeric, Vector2, Vector3, Vector4, Vector2Int, Vector3Int, Rect, RectInt, Bounds, BoundsInt etc
-- ListView  
+- Frame
+- InputText  
 - Scroll  
 - Separator  
-- SlidePad  
 - Slider  
 - Sprite  
-- Splitter  
-- Tab  
 - Text  
 - Texture  
-- Tree  
 - Window  
+- Heading
+- Spacing
+- InteractiveItem
 - Drag and Drop  
 ...and many more.
 
-# Differences Between Unity IMGUI and RimGui
+
+## Differences Between Unity IMGUI and RimGui
 
 - **Targets both developers and end-users:** While Unity IMGUI is primarily for developer tools, RimGui targets not only developers but also **user interfaces for players enjoying the game.**
 - **High-Performance Design:** RimGui is designed for high performance, including efforts to **minimize GC (Garbage Collection) allocation.**
@@ -97,14 +109,72 @@ The following UI is displayed by the code above.
 - **Wide Platform Support:** RimGui supports a diverse range of platforms, including **PC, Mobile, and WebGL**, allowing you to **target your desired environments without limitations.**
 - **Flexible Scalability:** With RimGui, you can easily change the size and scale of UI elements, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
 
-# Links
+## Links
 [AssetStore Page](https://assetstore.unity.com/packages/slug/316805)
-[Demo](https://gridrand.com/rimgui/WebGL)
+[Demo](https://gridrand.com/rimgui/webgl/core)
 [Github](https://github.com/Gridrand/RimGui)
 [Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
 [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui-library/1637582)
 
-# Support
+## Support
 If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
 For direct support, you can reach us at **support [at] gridrand [dot] com**.
-You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui-library/1637582) thread.
+You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
+
+
+
+# RimGui Extensions
+## Introduction  
+This extension pack for RimGui offers a wide variety of widgets, including dropdowns and several types of input controls.
+RimGui is required to use this pack.
+
+## Features
+- SliderNumeric
+- Text
+  - Various numeric types
+  - bool
+  - char
+- Splitter
+- VerticalBarHandle
+- SnapVerticalBarHandle
+- RectInnerPointHandle
+- SnapRectInnerPointHandle
+- Hyperlink
+- Label
+- ComboBoxButton
+- SlidePad
+- EditableText
+- Dropdown
+- InputDropdown
+- DragInput
+- Input
+  - Various numeric types
+  - char
+  - bool
+  - Vector2
+  - Vector3
+  - Vector4
+  - Vector2Int
+  - Vector3Int
+  - Rect
+  - RectInt
+  - Bounds
+  - BoundsInt
+  - Color
+  - Color32
+  - HsvColor
+- Utilities for drawing tree
+...and many more.
+
+For more details, please refer to the Demo.
+
+## Links
+[Demo](https://gridrand.com/rimgui/webgl/extensions)
+[Github](https://github.com/Gridrand/RimGui)
+[Introduction \| RimGui](https://gridrand.com/rimgui/docs/extensions/introduction)
+[Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582)
+
+## Support
+If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
+For direct support, you can reach us at support [at] gridrand [dot] com.
+You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
