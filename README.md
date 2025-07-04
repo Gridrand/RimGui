@@ -1,5 +1,7 @@
 # Introduction
-RimGui & RimGui Extensions
+![card-image.](card-image.png) ![extensions_card-image](extensions_card-image.png)
+
+[RimGui](https://assetstore.unity.com/packages/slug/316805) & [RimGui Extensions](https://assetstore.unity.com/packages/tools/gui/rimgui-extensions-323286)
 
 # RimGui
 
@@ -169,6 +171,7 @@ RimGui is required to use this pack.
 For more details, please refer to the Demo.
 
 ## Links
+[AssetStore Page](https://assetstore.unity.com/packages/tools/gui/rimgui-extensions-323286)
 [Demo](https://gridrand.com/rimgui/webgl/extensions)
 [Github](https://github.com/Gridrand/RimGui)
 [Introduction \| RimGui](https://gridrand.com/rimgui/docs/extensions/introduction)
