@@ -1,5 +1,6 @@
 # Introduction
-![card-image.](card-image.png) ![extensions_card-image](extensions_card-image.png)
+![card-image.](card-image.png)
+![extensions_card-image](extensions_card-image.png)
 
 [RimGui](https://assetstore.unity.com/packages/slug/316805) & [RimGui Extensions](https://assetstore.unity.com/packages/tools/gui/rimgui-extensions-323286)
 
@@ -59,6 +60,7 @@ if (Gui.NextHeight(100f).BeginScroll())
 }
 ```
 The following UI is displayed by the code above.
+
 ![code-gui-comparison](code-gui-comparison.png)
 
 ---
