@@ -28,9 +28,10 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
 **High-Performance Immediate Mode GUI (ImGui)**
 - Designed for high performance, with efforts to minimize GC (Garbage Collection) allocation.
+- Draw calls are reduced by using a single Shader and Material, and by consolidating all images, including text, into one Texture.
 
-**Targets both developers and end-users:**
-- RimGui targets not only developers but also **user interfaces for players enjoying the game.**
+**Build UI Rapidly with Code Only**
+- To add a slider, **just write a single line of code**—no drag-and-drop required. To remove it, simply delete that single line.
 
 **Flexible Scalability:**
 - You can easily change the size and scale of UI widgets, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
@@ -102,13 +103,22 @@ The following UI is displayed by the code above.
 - Spacing
 - InteractiveItem
 - Drag and Drop  
-...and many more.
+- **And many more!**
 
+Rendering
+- Line, Anti-Aliased Line,Closed Anti-Aliased Line
+- Triangle
+- Rectangle
+- Circle
+- Grid
+- Anti-Aliased Convex Polygon
+- BezierCurve
+- Text
+- **And many more!**
 
 ## Differences Between Unity IMGUI and RimGui
 
-- **Targets both developers and end-users:** While Unity IMGUI is primarily for developer tools, RimGui targets not only developers but also **user interfaces for players enjoying the game.**
-- **High-Performance Design:** RimGui is designed for high performance, including efforts to **minimize GC (Garbage Collection) allocation.**
+- **High-Performance Design:** RimGui is designed for high performance, including efforts to minimize GC (Garbage Collection) allocation. It also reduces draw calls by using a single Shader and Material, and by consolidating all images, including text, into one Texture.
 - **Modern Rendering Pipeline Compatibility:** RimGui is compatible with the **URP (Universal Render Pipeline) and HDRP (High Definition Render Pipeline)**, enables seamless integration with the latest Unity projects.
 - **Wide Platform Support:** RimGui supports a diverse range of platforms, including **PC, Mobile, and WebGL**, allowing you to **target your desired environments without limitations.**
 - **Flexible Scalability:** With RimGui, you can easily change the size and scale of UI elements, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
@@ -129,7 +139,7 @@ You are also welcome to post questions or feedback on the [Unity Discussions](ht
 
 # RimGui Extensions
 ## Introduction  
-This extension pack for RimGui offers a wide variety of widgets, including dropdowns and several types of input controls.
+This extension pack for RimGui, a code-driven Immediate Mode GUI, adds a wide variety of widgets, including dropdowns and various input controls. 
 RimGui is required to use this pack.
 
 ## Features
