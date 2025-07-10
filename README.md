@@ -7,8 +7,16 @@
 # RimGui
 
 ## Introduction  
-**RimGui** is an easy-to-use code-driven GUI library designed for rapid iteration. 
-Build user interfaces quickly and efficiently with minimal code. It's perfect not only for debugging tools but also for integrating smooth and responsive UI into actual gameplay.
+RimGui is an easy-to-use, code-driven GUI library built from scratch for rapid iteration, not as an extension of existing UI Toolkit or uGUI.
+
+**I’ve often found existing GUI libraries frustrating to use:**
+- Building UIs usually involves tedious drag-and-drop operations
+- Even simple UI can involve a lot of boilerplate code
+- Adding, removing, and managing UI elements like buttons can be a hassle
+- Registering and unregistering events like click handlers takes unnecessary effort
+
+With RimGui, there's no need to build UIs with drag-and-drop or manually manage the lifecycle of UI elements.
+You can render them with very concise code, like **Gui.Button()**.
 
 Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
@@ -17,7 +25,6 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
 **Customizable**  
 - Easily tweak various parameters to fit your needs.  
-- You can also create custom widgets from scratch.
 - You can even render freely from the triangle mesh level for complete control.
 
 **Cross-platform Support**  
@@ -26,8 +33,8 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 **Font Support**  
 - Supports custom fonts and texture atlas generation.
 
-**High-Performance Immediate Mode GUI (ImGui)**
-- Designed for high performance, with efforts to minimize GC (Garbage Collection) allocation.
+**Optimized Immediate Mode GUI (ImGui)**
+- Designed with minimized GC (Garbage Collection) allocation.
 - Draw calls are reduced by using a single Shader and Material, and by consolidating all images, including text, into one Texture.
 
 **Build UI Rapidly with Code Only**
@@ -141,6 +148,19 @@ You are also welcome to post questions or feedback on the [Unity Discussions](ht
 ## Introduction  
 This extension pack for RimGui, a code-driven Immediate Mode GUI, adds a wide variety of widgets, including dropdowns and various input controls. 
 RimGui is required to use this pack.
+
+RimGui is an easy-to-use, code-driven GUI library built from scratch for rapid iteration, not as an extension of existing UI Toolkit or uGUI.
+
+**I’ve often found existing GUI libraries frustrating to use:**
+- Building UIs usually involves tedious drag-and-drop operations
+- Even simple UI can involve a lot of boilerplate code
+- Adding, removing, and managing UI elements like buttons can be a hassle
+- Registering and unregistering events like click handlers takes unnecessary effort
+
+With RimGui, there's no need to build UIs with drag-and-drop or manually manage the lifecycle of UI elements.
+You can render them with very concise code, like **Gui.Button()**.
+
+Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 
 ## Features
 - SliderNumeric
