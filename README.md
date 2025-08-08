@@ -7,7 +7,7 @@
 # RimGui
 
 ## Introduction  
-RimGui is an easy-to-use, code-driven GUI library built from scratch for rapid iteration, not as an extension of existing UI Toolkit or uGUI.
+RimGui is an easy-to-use, code-driven Immediate Mode GUI library built from scratch for rapid iteration, rather than extending existing UI Toolkit or uGUI.
 
 **I’ve often found existing GUI libraries frustrating to use:**
 - Building UIs usually involves tedious drag-and-drop operations
@@ -121,6 +121,7 @@ Rendering
 - Anti-Aliased Convex Polygon
 - BezierCurve
 - Text
+- Texture
 - **And many more!**
 
 ## Differences Between Unity IMGUI and RimGui
