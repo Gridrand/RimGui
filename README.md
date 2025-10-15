@@ -175,7 +175,6 @@ Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
 - RectInnerPointHandle
 - SnapRectInnerPointHandle
 - Hyperlink
-- Label
 - ComboBoxButton
 - SlidePad
 - EditableText
