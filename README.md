@@ -1,8 +1,7 @@
 # Introduction
 ![card-image.](card-image.png)
-![extensions_card-image](extensions_card-image.png)
 
-[RimGui](https://assetstore.unity.com/packages/slug/316805) & [RimGui Extensions](https://assetstore.unity.com/packages/tools/gui/rimgui-extensions-323286)
+[RimGui](https://assetstore.unity.com/packages/slug/375796)
 
 # RimGui
 
@@ -89,27 +88,61 @@ The following UI is displayed by the code above.
 ---
 
 ## Features  
-- Box  
-- Button  
-- ToggleButton  
-- RadioButton  
-- CheckBox  
+- Box
+- Button
+- ToggleButton
+- RadioButton
+- CheckBox
 - ColorPreview
 - Custom
-- Foldout  
+- Foldout
 - Frame
-- InputText  
-- Scroll  
-- Separator  
-- Slider  
-- Sprite  
-- Text  
-- Texture  
-- Window  
+- InputText
+- Scroll
+- Separator
+- Slider
+- Sprite
+- Text
+-- Various numeric types
+-- bool
+-- char
+- Texture
+- Window
 - Heading
 - Spacing
 - InteractiveItem
-- Drag and Drop  
+- Drag and Drop
+- SliderNumeric
+- Splitter
+- VerticalBarHandle
+- SnapVerticalBarHandle
+- RectInnerPointHandle
+- SnapRectInnerPointHandle
+- Hyperlink
+- Label
+- ComboBoxButton
+- SlidePad
+- EditableText
+- Dropdown
+- InputDropdown
+- DragInput
+- Input
+-- Various numeric types
+-- char
+-- bool
+-- Vector2
+-- Vector3
+-- Vector4
+-- Vector2Int
+-- Vector3Int
+-- Rect
+-- RectInt
+-- Bounds
+-- BoundsInt
+-- Color
+-- Color32
+-- HsvColor
+- Utilities for drawing tree
 - **And many more!**
 
 Rendering
@@ -132,8 +165,9 @@ Rendering
 - **Flexible Scalability:** With RimGui, you can easily change the size and scale of UI elements, making it **simple to support multiple resolutions.** This enables optimal UI display across various screen sizes.
 
 ## Links
-[AssetStore Page](https://assetstore.unity.com/packages/slug/316805)
-[Demo](https://gridrand.com/rimgui/webgl/core)
+[AssetStore Page](https://assetstore.unity.com/packages/slug/375796)
+[Demo1](https://gridrand.com/rimgui/webgl/core)
+[Demo2](https://gridrand.com/rimgui/webgl/extensions/)
 [Github](https://github.com/Gridrand/RimGui)
 [Introduction \| RimGui](https://gridrand.com/rimgui/docs/introduction)
 [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui-library/1637582)
@@ -141,75 +175,4 @@ Rendering
 ## Support
 If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
 For direct support, you can reach us at **support [at] gridrand [dot] com**.
-You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
-
-
-
-# RimGui Extensions
-## Introduction  
-This extension pack for RimGui, a code-driven Immediate Mode GUI, adds a wide variety of widgets, including dropdowns and various input controls. 
-RimGui is required to use this pack.
-
-RimGui is an easy-to-use, code-driven Immediate Mode GUI library built from scratch for rapid iteration, rather than extending existing UI Toolkit or uGUI.
-
-**I’ve often found existing GUI libraries frustrating to use:**
-- Building UIs usually involves tedious drag-and-drop operations
-- Even simple UI can involve a lot of boilerplate code
-- Adding, removing, and managing UI elements like buttons can be a hassle
-- Registering and unregistering events like click handlers takes unnecessary effort
-
-With RimGui, there's no need to build UIs with drag-and-drop or manually manage the lifecycle of UI elements.
-You can render them with very concise code, like **Gui.Button()**.
-
-Works with all Unity versions 2021+ including 2021, 2022, 2023 & Unity 6.
-
-## Features
-- SliderNumeric
-- Text
-  - Various numeric types
-  - bool
-  - char
-- Splitter
-- VerticalBarHandle
-- SnapVerticalBarHandle
-- RectInnerPointHandle
-- SnapRectInnerPointHandle
-- Hyperlink
-- ComboBoxButton
-- SlidePad
-- EditableText
-- Dropdown
-- InputDropdown
-- DragInput
-- Input
-  - Various numeric types
-  - char
-  - bool
-  - Vector2
-  - Vector3
-  - Vector4
-  - Vector2Int
-  - Vector3Int
-  - Rect
-  - RectInt
-  - Bounds
-  - BoundsInt
-  - Color
-  - Color32
-  - HsvColor
-- Utilities for drawing tree
-...and many more.
-
-For more details, please refer to the Demo.
-
-## Links
-[AssetStore Page](https://assetstore.unity.com/packages/tools/gui/rimgui-extensions-323286)
-[Demo](https://gridrand.com/rimgui/webgl/extensions)
-[Github](https://github.com/Gridrand/RimGui)
-[Introduction \| RimGui](https://gridrand.com/rimgui/docs/extensions/introduction)
-[Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582)
-
-## Support
-If you have any bugs or feature requests, please submit them via [this page](https://github.com/Gridrand/RimGui/issues).
-For direct support, you can reach us at support [at] gridrand [dot] com.
 You are also welcome to post questions or feedback on the [Unity Discussions](https://discussions.unity.com/t/released-rimgui-code-driven-gui/1637582) thread.
